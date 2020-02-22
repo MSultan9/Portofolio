@@ -340,6 +340,7 @@ nav a {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 2rem;
+  margin-bottom: 30px;
 }
 
 .form-section form input, .form-section form textarea {
