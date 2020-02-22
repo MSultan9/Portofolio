@@ -35,6 +35,19 @@ $gray-text: #2c2c2c;
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .projects > div{
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 754px) {
     html {
         font-size: 45%;
@@ -69,15 +82,6 @@ $gray-text: #2c2c2c;
             margin: 2rem;
         }
     }
-
-    .travelly, .elena {
-        flex: 1 1 50rem;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
     form {
         padding: 0;
         width: 95%;

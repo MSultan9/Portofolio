@@ -278,33 +278,30 @@ nav a {
 .projects {
   width: 90%;
   margin: auto;
+  margin-bottom: 30px;
   min-height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   text-align: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .projects h2 {
   margin: 5rem;
 }
 
-.travelly, .elena {
+.projects > div {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+}
+
+.projects > div img {
+  width: 88%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .form-section {
@@ -421,6 +418,18 @@ footer h4 {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .projects > div img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 754px) {
   html {
     font-size: 45%;
@@ -480,15 +489,6 @@ footer h4 {
   }
   .intro-social a {
     margin: 2rem;
-  }
-  .travelly, .elena {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50rem;
-            flex: 1 1 50rem;
-  }
-  .travelly img, .elena img {
-    width: 100%;
-    height: 100%;
   }
   form {
     padding: 0;

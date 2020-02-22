@@ -1,15 +1,21 @@
 .projects {
     width: 90%;
     margin: auto;
+    margin-bottom: 30px;
     min-height: 90vh;
-    @include flex(space-between, center, row);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
-    flex-wrap: wrap;
     h2 {
         margin: 5rem;
     }
 }
 
-.travelly, .elena {
+.projects > div {
     flex: 1 1 40rem;
+    img {
+        width: 88%;
+        height: 450px;
+        object-fit: cover;
+    }
 }
