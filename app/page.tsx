@@ -105,7 +105,7 @@ export default function Home() {
               <div className="rounded-3xl px-5 py-7 bg-accent mb-6">
                 <div className="text-primary text-xl mb-2 font-bold">2012 - 2017</div>
                 <h3 className="text-white text-2xl font-bold mb-2">Telecommunications and Network Engineering</h3>
-                <div className="text-white">Universite Antonine</div>
+                <div className="text-white">Université Antonine</div>
               </div>
             </div>
           </div>
