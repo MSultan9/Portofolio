@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className="flex items-center flex-wrap text-white gap-20">
           <div className="flex items-center gap-2">
-            <p className="text-6xl font-bold">5+</p>
+            <p className="text-6xl font-bold">{new Date().getFullYear() - 2019}+</p>
             <div>
               <p>Years of</p>
               <p>Experience</p>
